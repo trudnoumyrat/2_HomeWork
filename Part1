@@ -1,0 +1,48 @@
+using System;
+
+namespace _2_HomeWork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string Fname = "Костя"; // Имя 0
+
+            string Sname = "Фомин"; // Фамилия 1
+
+            string Pname = "Иваныч"; // Отчество 2
+
+            string email = "Lol_master99@gmail.com"; // Почта 3
+
+            byte age = 23; // Возраст 4
+
+            double prog = 8.7; // Баллы по програмированию 5
+
+            double math = 9.5; // Баллы по математике 6
+
+            double phys = 7.0; // Баллы по физике 7
+
+            //string pattern = "Имя: {0} Фамилия: {1} Отчество: {2} Эл. Почта: {3} Возраст: {4} Баллы по программированию: {5} Баллы по математике: {6} Баллы по физике: {7}";
+
+            #region newPattern
+
+
+            string newPattern = "Имя: {0} \nФамилия: {1} \nОтчество: {2} \nЭл. Почта: {3} \nВозраст: {4} \nБаллы по программированию: {5} \nБаллы по математике: {6} \nБаллы по физике: {7}";
+
+            #endregion
+
+            Console.WriteLine(newPattern,
+                              Fname,
+                              Sname,
+                              Pname,
+                              email,
+                              age,
+                              prog,
+                              math,
+                              phys);
+
+            Console.ReadKey();
+
+        }
+    }
+}
